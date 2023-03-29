@@ -7,7 +7,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF('/AtriumFireGraphic.glb')
+  const { nodes, materials } = useGLTF('/fire-suppresion-graphic/AtriumFireGraphic.glb')
   return (
     <group {...props} dispose={null}>
       <group>
@@ -76,4 +76,4 @@ export function Model(props) {
   )
 }
 
-useGLTF.preload('/AtriumFireGraphic.glb')
+useGLTF.preload('/fire-suppresion-graphic/AtriumFireGraphic.glb')
